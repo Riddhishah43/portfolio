@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riddhi Shah — Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>RS<span class="nav__logo-bracket"> /&gt;</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#achievements" class="nav__link">Achievements</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#certifications" class="nav__link">Certifications</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="hero__particles" id="particles" aria-hidden="true"></div>
+      <div class="hero__code-rain" id="codeRain" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <div class="hero__status anim-fade-up">
+          <span class="hero__status-dot"></span>
+          BCA Student &bull; Exploring Web Development &amp; AI
+        </div>
+
+        <h1 class="hero__name anim-fade-up anim-delay-1">
+          <span class="hero__name-first">RIDDHI</span>
+          <span class="hero__name-last">SHAH</span>
+        </h1>
+
+        <p class="hero__tagline anim-fade-up anim-delay-2">
+          Learning. <span class="text-gradient">Building.</span> Experimenting.
+        </p>
+
+        <p class="hero__intro anim-fade-up anim-delay-3">
+          Learning, building, and experimenting with<br>
+          <span class="text-gradient hero__intro-highlight">Web Development &amp; AI.</span>
+        </p>
+
+        <div class="hero__ctas anim-fade-up anim-delay-4">
+          <a href="#projects" class="btn btn--primary">
+            <span class="btn__text">View Projects</span>
+            <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn--secondary">
+            <span class="btn__text">Let's Connect</span>
+          </a>
+        </div>
+
+        <div class="hero__terminal anim-fade-up anim-delay-5">
+          <div class="terminal">
+            <div class="terminal__header">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+              <span class="terminal__title">riddhi@portfolio ~ $</span>
+            </div>
+            <div class="terminal__body">
+              <div class="terminal__line">
+                <span class="terminal__prompt">$</span>
+                <span class="terminal__cmd" id="typingText"></span>
+                <span class="terminal__cursor">|</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-indicator anim-fade-up anim-delay-5">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse__wheel"></div>
+        </div>
+        <span>scroll down</span>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__container">
+
+        <div class="about__header">
+          <span class="about__label anim-fade-up">// about me</span>
+          <h2 class="about__title anim-fade-up anim-delay-1">
+            A little bit about<br>
+            <span class="text-gradient">who I am.</span>
+          </h2>
+        </div>
+
+        <!-- ── Who I Am ──────────────────────── -->
+        <div class="about__block about__block--who">
+          <div class="about__block-header anim-fade-up">
+            <div class="about__block-number">01</div>
+            <h3 class="about__block-title">Who I Am</h3>
+            <div class="about__block-line"></div>
+          </div>
+          <div class="about__block-content">
+            <div class="about__who-text anim-fade-up">
+              <p>
+                I'm Riddhi Shah, a BCA student who's genuinely curious about how things
+                work on the web and in the world of AI. I don't have all the answers yet
+                — and honestly, that's what keeps me going.
+              </p>
+              <p>
+                Most of what I know comes from building things, breaking things, and figuring
+                things out. I learn best by doing — writing code, making mistakes, and
+                iterating until it works.
+              </p>
+            </div>
+            <div class="about__who-cards anim-fade-up anim-delay-1">
+              <div class="about__card about__card--accent">
+                <div class="about__card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/><path d="M12 14l9-5-9-5-9 5 9 5zM12 14v7m0 0l-3-3m3 3l3-3"/></svg>
+                </div>
+                <span class="about__card-label">BCA Student</span>
+                <span class="about__card-sub">Still learning every day</span>
+              </div>
+              <div class="about__card about__card--accent2">
+                <div class="about__card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                </div>
+                <span class="about__card-label">Self-taught learner</span>
+                <span class="about__card-sub">Projects over lectures</span>
+              </div>
+              <div class="about__card about__card--accent3">
+                <div class="about__card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                </div>
+                <span class="about__card-label">Curious mind</span>
+                <span class="about__card-sub">Asking "why?" a lot</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── What I'm Interested In ────────── -->
+        <div class="about__block about__block--interests">
+          <div class="about__block-header anim-fade-up">
+            <div class="about__block-number">02</div>
+            <h3 class="about__block-title">What I'm Interested In</h3>
+            <div class="about__block-line"></div>
+          </div>
+          <div class="about__block-content">
+            <div class="about__interests-grid">
+              <div class="about__interest-item anim-fade-up">
+                <div class="about__interest-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                </div>
+                <div class="about__interest-text">
+                  <h4>Web Development</h4>
+                  <p>Building interfaces, figuring out layouts, and making things that actually work in a browser.</p>
+                </div>
+              </div>
+              <div class="about__interest-item anim-fade-up anim-delay-1">
+                <div class="about__interest-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div class="about__interest-text">
+                  <h4>AI / GenAI</h4>
+                  <p>Fascinated by what language models can do. Trying to understand how they work under the hood.</p>
+                </div>
+              </div>
+              <div class="about__interest-item anim-fade-up anim-delay-2">
+                <div class="about__interest-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </div>
+                <div class="about__interest-text">
+                  <h4>Real-world apps</h4>
+                  <p>Not just tutorials — I want to build things that solve actual problems for actual people.</p>
+                </div>
+              </div>
+              <div class="about__interest-item anim-fade-up anim-delay-3">
+                <div class="about__interest-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div class="about__interest-text">
+                  <h4>Emerging tech</h4>
+                  <p>Experimenting with whatever feels new and interesting. Staying curious, not chasing hype.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── My Approach ────────────────────── -->
+        <div class="about__block about__block--approach">
+          <div class="about__block-header anim-fade-up">
+            <div class="about__block-number">03</div>
+            <h3 class="about__block-title">My Approach</h3>
+            <div class="about__block-line"></div>
+          </div>
+          <div class="about__block-content">
+            <p class="about__approach-text anim-fade-up">
+              I don't follow a rigid process. But there's a pattern that keeps showing up in how I work:
+            </p>
+            <div class="about__approach-loop" id="approachLoop">
+              <div class="about__approach-steps anim-fade-up anim-delay-1">
+                <div class="about__step active" data-step="0">
+                  <div class="about__step-dot"></div>
+                  <span>Learn</span>
+                </div>
+                <div class="about__step-connector"></div>
+                <div class="about__step" data-step="1">
+                  <div class="about__step-dot"></div>
+                  <span>Build</span>
+                </div>
+                <div class="about__step-connector"></div>
+                <div class="about__step" data-step="2">
+                  <div class="about__step-dot"></div>
+                  <span>Experiment</span>
+                </div>
+                <div class="about__step-connector"></div>
+                <div class="about__step" data-step="3">
+                  <div class="about__step-dot"></div>
+                  <span>Debug</span>
+                </div>
+                <div class="about__step-connector"></div>
+                <div class="about__step" data-step="4">
+                  <div class="about__step-dot"></div>
+                  <span>Improve</span>
+                </div>
+              </div>
+              <div class="about__approach-visual">
+                <div class="about__loop-ring">
+                  <svg viewBox="0 0 200 200" class="about__loop-svg">
+                    <circle cx="100" cy="100" r="90" class="about__loop-track" />
+                    <circle cx="100" cy="100" r="90" class="about__loop-progress" id="loopProgress" />
+                  </svg>
+                  <div class="about__loop-label" id="loopLabel">Learn</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── What I'm Building Towards ─────── -->
+        <div class="about__block about__block--goals">
+          <div class="about__block-header anim-fade-up">
+            <div class="about__block-number">04</div>
+            <h3 class="about__block-title">What I'm Building Towards</h3>
+            <div class="about__block-line"></div>
+          </div>
+          <div class="about__block-content">
+            <div class="about__goals-grid">
+              <div class="about__goal anim-fade-up">
+                <span class="about__goal-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+                <div>
+                  <h4>Stronger Web Development skills</h4>
+                  <p>Going beyond tutorials. Writing cleaner code, understanding architecture, and building full projects.</p>
+                </div>
+              </div>
+              <div class="about__goal anim-fade-up anim-delay-1">
+                <span class="about__goal-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+                <div>
+                  <h4>Deeper understanding of AI/GenAI</h4>
+                  <p>Not just using APIs — actually understanding how models work, how to fine-tune, and when to apply them.</p>
+                </div>
+              </div>
+              <div class="about__goal anim-fade-up anim-delay-2">
+                <span class="about__goal-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+                <div>
+                  <h4>Better software practices</h4>
+                  <p>Testing, version control, clean code — the stuff that separates a project from a product.</p>
+                </div>
+              </div>
+              <div class="about__goal anim-fade-up anim-delay-3">
+                <span class="about__goal-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+                <div>
+                  <h4>Building useful products</h4>
+                  <p>Something that someone actually wants to use. That's the real test.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="skills__container">
+
+        <div class="skills__header">
+          <span class="skills__label anim-fade-up">// tech stack</span>
+          <h2 class="skills__title anim-fade-up anim-delay-1">
+            Skills & tools I<br>
+            <span class="text-gradient">work with.</span>
+          </h2>
+          <p class="skills__subtitle anim-fade-up anim-delay-2">
+            No fake percentages. Just the honest state of where I'm at — what I'm comfortable
+            with, what I'm learning, and what's next on my list.
+          </p>
+        </div>
+
+        <!-- ── Currently Comfortable ────────────── -->
+        <div class="skills__group">
+          <div class="skills__group-header anim-fade-up">
+            <div class="skills__group-dot skills__group-dot--comfortable"></div>
+            <h3 class="skills__group-title">Currently Comfortable</h3>
+            <span class="skills__group-count">5</span>
+          </div>
+          <div class="skills__grid">
+
+            <div class="skill-card anim-fade-up" data-tilt>
+              <div class="skill-card__icon skill-card__icon--html">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.997 24l-8.493-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.002l5.357-1.14.733-8.147h-8.043l.134-1.473h8.632l.17-1.868z"/></svg>
+              </div>
+              <span class="skill-card__name">HTML</span>
+              <span class="skill-card__badge skill-card__badge--comfortable">Comfortable</span>
+            </div>
+
+            <div class="skill-card anim-fade-up anim-delay-1" data-tilt>
+              <div class="skill-card__icon skill-card__icon--css">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.997 24l-8.493-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.002l5.357-1.14.733-8.147h-8.043l.134-1.473h8.632l.17-1.868z"/></svg>
+              </div>
+              <span class="skill-card__name">CSS</span>
+              <span class="skill-card__badge skill-card__badge--comfortable">Comfortable</span>
+            </div>
+
+            <div class="skill-card anim-fade-up anim-delay-2" data-tilt>
+              <div class="skill-card__icon skill-card__icon--js">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.405-.6-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+              </div>
+              <span class="skill-card__name">JavaScript</span>
+              <span class="skill-card__badge skill-card__badge--comfortable">Comfortable</span>
+            </div>
+
+            <div class="skill-card anim-fade-up anim-delay-3" data-tilt>
+              <div class="skill-card__icon skill-card__icon--node">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.998 24c-.321 0-.641-.084-.922-.247l-2.936-1.737c-.438-.245-.224-.332-.08-.383.585-.203.703-.25 1.328-.604.065-.037.151-.023.218.017l2.256 1.339a.29.29 0 00.272 0l8.795-5.076a.277.277 0 00.134-.238V6.921a.28.28 0 00-.137-.242l-8.791-5.072a.278.278 0 00-.271 0L3.075 6.68a.284.284 0 00-.139.241v10.15a.27.27 0 00.139.235l2.409 1.392c1.307.654 2.108-.116 2.108-.89V7.787c0-.142.114-.253.256-.253h1.115c.139 0 .255.112.255.253v10.021c0 1.745-.95 2.745-2.604 2.745-.508 0-.909 0-2.026-.551L2.28 18.675A1.857 1.857 0 011.26 17.07V6.921c0-.681.363-1.317.953-1.658L11.007.187a1.929 1.929 0 011.982 0l8.794 5.076c.591.34.955.977.955 1.658v10.15a1.87 1.87 0 01-1.002 1.605l-8.795 5.076a1.81 1.81 0 01-.941.248z"/></svg>
+              </div>
+              <span class="skill-card__name">Node.js</span>
+              <span class="skill-card__badge skill-card__badge--comfortable">Comfortable</span>
+            </div>
+
+            <div class="skill-card anim-fade-up anim-delay-4" data-tilt>
+              <div class="skill-card__icon skill-card__icon--github">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </div>
+              <span class="skill-card__name">GitHub</span>
+              <span class="skill-card__badge skill-card__badge--comfortable">Comfortable</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Currently Learning ────────────── -->
+        <div class="skills__group">
+          <div class="skills__group-header anim-fade-up">
+            <div class="skills__group-dot skills__group-dot--learning"></div>
+            <h3 class="skills__group-title">Currently Learning</h3>
+            <span class="skills__group-count">4</span>
+          </div>
+          <div class="skills__grid">
+
+            <div class="skill-card skill-card--learning anim-fade-up" data-tilt>
+              <div class="skill-card__icon skill-card__icon--python">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.89.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>
+              </div>
+              <span class="skill-card__name">Python</span>
+              <span class="skill-card__badge skill-card__badge--learning">Learning</span>
+            </div>
+
+            <div class="skill-card skill-card--learning anim-fade-up anim-delay-1" data-tilt>
+              <div class="skill-card__icon skill-card__icon--ai">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 014 4v1a4 4 0 01-8 0V6a4 4 0 014-4z"/><path d="M16 11a6 6 0 01-12 0"/><path d="M12 17v5M8 22h8"/><path d="M18 8l2 2M4 8l2 2"/><circle cx="12" cy="6" r="1"/></svg>
+              </div>
+              <span class="skill-card__name">AI / GenAI</span>
+              <span class="skill-card__badge skill-card__badge--learning">Learning</span>
+            </div>
+
+            <div class="skill-card skill-card--learning anim-fade-up anim-delay-2" data-tilt>
+              <div class="skill-card__icon skill-card__icon--aidev">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
+              </div>
+              <span class="skill-card__name">AI-assisted Dev</span>
+              <span class="skill-card__badge skill-card__badge--learning">Learning</span>
+            </div>
+
+            <div class="skill-card skill-card--learning anim-fade-up anim-delay-3" data-tilt>
+              <div class="skill-card__icon skill-card__icon--vibe">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/></svg>
+              </div>
+              <span class="skill-card__name">Vibe Coding</span>
+              <span class="skill-card__badge skill-card__badge--learning">Learning</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Exploring Next ────────────── -->
+        <div class="skills__group">
+          <div class="skills__group-header anim-fade-up">
+            <div class="skills__group-dot skills__group-dot--exploring"></div>
+            <h3 class="skills__group-title">Exploring Next</h3>
+            <span class="skills__group-count">6</span>
+          </div>
+          <div class="skills__grid skills__grid--exploring">
+
+            <div class="skill-card skill-card--exploring anim-fade-up" data-tilt>
+              <div class="skill-card__icon skill-card__icon--react">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.23 12.004a2.236 2.236 0 01-2.235 2.236 2.236 2.236 0 01-2.236-2.236 2.236 2.236 0 012.235-2.236 2.236 2.236 0 012.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.31 0-.593.064-.839.189-.91.47-1.494 1.39-1.494 2.44 0 1.573 1.55 3.067 4.036 4.048-.025.21-.04.422-.04.635 0 3.473 3.81 6.298 8.508 6.298 4.697 0 8.507-2.825 8.507-6.298 0-.213-.015-.426-.04-.635 2.485-.98 4.035-2.475 4.035-4.048 0-1.05-.584-1.97-1.494-2.44a2.83 2.83 0 00-.84-.189zM12.016 21.49c-3.448 0-6.25-2.063-6.25-4.611 0-1.573 1.55-3.068 4.037-4.048-.025.21-.04.422-.04.635 0 3.473 3.81 6.298 8.508 6.298 4.697 0 8.507-2.825 8.507-6.298 0-.213-.015-.426-.04-.635 2.485.98 4.035 2.475 4.035 4.048 0 2.548-2.802 4.611-6.25 4.611z"/></svg>
+              </div>
+              <span class="skill-card__name">React</span>
+              <span class="skill-card__badge skill-card__badge--exploring">Exploring</span>
+            </div>
+
+            <div class="skill-card skill-card--exploring anim-fade-up anim-delay-1" data-tilt>
+              <div class="skill-card__icon skill-card__icon--express">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.24-.334-.243.335-1.156 1.598a3.01 3.01 0 01-3.683.631L2.1 11.756l.016.022 3.637 5.014a3.01 3.01 0 003.685.63l1.093-.758 1.094.76a3.01 3.01 0 003.686-.63l3.636-5.014.016.022-1.493 2.071a1.53 1.53 0 01-1.894.72l-1.628-.447-.335-.093-.336.093zM8.594 10.559a2.007 2.007 0 110-4.014 2.007 2.007 0 010 4.014z"/></svg>
+              </div>
+              <span class="skill-card__name">Express.js</span>
+              <span class="skill-card__badge skill-card__badge--exploring">Exploring</span>
+            </div>
+
+            <div class="skill-card skill-card--exploring anim-fade-up anim-delay-2" data-tilt>
+              <div class="skill-card__icon skill-card__icon--mongo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.889 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.274 0 .262 8.29.262 8.29"/></svg>
+              </div>
+              <span class="skill-card__name">MongoDB</span>
+              <span class="skill-card__badge skill-card__badge--exploring">Exploring</span>
+            </div>
+
+            <div class="skill-card skill-card--exploring anim-fade-up anim-delay-3" data-tilt>
+              <div class="skill-card__icon skill-card__icon--tailwind">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.9 1.35.98 1 2.13 2.15 4.6 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.9-1.35C15.62 7.15 14.47 6 12 6zM7 12c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.9 1.35C8.38 16.85 9.53 18 12 18c2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.9-1.35C10.62 13.15 9.47 12 7 12z"/></svg>
+              </div>
+              <span class="skill-card__name">Tailwind CSS</span>
+              <span class="skill-card__badge skill-card__badge--exploring">Exploring</span>
+            </div>
+
+            <div class="skill-card skill-card--exploring anim-fade-up anim-delay-4" data-tilt>
+              <div class="skill-card__icon skill-card__icon--ts">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 011.306.34v2.458a3.95 3.95 0 00-.643-.361 5.093 5.093 0 00-.717-.26 5.453 5.453 0 00-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 00-.623.242c-.17.104-.3.229-.393.374a.888.888 0 00-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.42.276.69.399.56.251.885.383.62.278.9.428.47.316.655.481c.177.16.308.346.393.556.085.21.128.452.128.726 0 .412-.075.757-.224 1.033a3.68 3.68 0 01-.647.786c-.28.244-.612.447-.997.607-.384.16-.82.281-1.31.36a6.012 6.012 0 01-1.566.124v2.616a4.57 4.57 0 001.627-.312v-2.336a4.27 4.27 0 01-.792.163c-.352.065-.664.147-.938.245-.273.098-.5.222-.68.373-.18.15-.314.329-.403.536-.09.208-.134.446-.134.715 0 .376.088.697.262.963.175.265.422.494.741.685s.71.345 1.103.496c.393.15.813.288 1.26.414.446.126.898.256 1.354.389l.11.035v2.471a6.35 6.35 0 01-1.761.234c-.663 0-1.294-.088-1.893-.263a5.07 5.07 0 01-1.518-.764 4.47 4.47 0 01-1.04-1.202c-.25-.464-.391-1.008-.423-1.635a8.58 8.58 0 01-.013-1.021c.025-.653.172-1.27.44-1.852a5.12 5.12 0 011.276-1.549 6.49 6.49 0 011.852-1.057 8.26 8.26 0 012.348-.427zM5.462 15.598c.116-.053.246-.094.391-.123.145-.03.301-.05.471-.061.17-.011.348-.017.532-.017.306 0 .588.033.845.1.258.066.483.17.675.313.191.142.34.33.445.563.105.233.158.52.158.861 0 .262-.049.496-.146.701-.098.205-.238.386-.418.543-.18.158-.4.29-.658.398-.26.108-.558.198-.896.271-.337.073-.704.14-1.1.202v2.657H7.394v-2.657c-.396-.062-.762-.128-1.1-.202-.338-.073-.636-.163-.896-.271a2.83 2.83 0 01-.658-.398 1.89 1.89 0 01-.418-.543 1.87 1.87 0 01-.146-.701c0-.341.053-.628.158-.861.105-.234.254-.421.445-.564.192-.142.417-.247.675-.312.257-.067.54-.1.845-.1.184 0 .361.006.532.017.17.011.326.031.471.061.145.029.275.07.391.123v-2.68c.257.096.499.163.726.2.227.038.44.067.64.089.2.022.387.035.56.038h.052c.173-.003.36-.016.56-.038.2-.022.413-.051.64-.089.227-.037.47-.104.726-.2v2.68z"/></svg>
+              </div>
+              <span class="skill-card__name">TypeScript</span>
+              <span class="skill-card__badge skill-card__badge--exploring">Exploring</span>
+            </div>
+
+            <div class="skill-card skill-card--exploring anim-fade-up anim-delay-5" data-tilt>
+              <div class="skill-card__icon skill-card__icon--uiux">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg>
+              </div>
+              <span class="skill-card__name">UI/UX</span>
+              <span class="skill-card__badge skill-card__badge--exploring">Exploring</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="learning" id="learning">
+      <div class="learning__container">
+
+        <div class="learning__header">
+          <span class="learning__label anim-fade-up">// currently learning</span>
+          <h2 class="learning__title anim-fade-up anim-delay-1">
+            The path I'm<br>
+            <span class="text-gradient">walking on.</span>
+          </h2>
+          <p class="learning__subtitle anim-fade-up anim-delay-2">
+            Not an expert. Just someone who's curious enough to keep showing up and figuring things out.
+          </p>
+        </div>
+
+        <!-- Learning Path -->
+        <div class="learning__path anim-fade-up anim-delay-3">
+          <div class="learning__path-line"></div>
+
+          <div class="learning__node learning__node--start">
+            <div class="learning__node-ring">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="20"/><path d="M15 24l6 6 12-12"/></svg>
+            </div>
+            <div class="learning__node-content">
+              <h4>Web Development</h4>
+              <p>The foundation I've been building on — HTML, CSS, JavaScript, and how the web works.</p>
+              <span class="learning__node-tag learning__node-tag--done">Base</span>
+            </div>
+          </div>
+
+          <div class="learning__arrow anim-fade-up">
+            <svg viewBox="0 0 24 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 0v32M6 26l6 6 6-6"/></svg>
+          </div>
+
+          <div class="learning__node learning__node--active">
+            <div class="learning__node-ring learning__node-ring--active">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="20"/><path d="M16 18v12M24 14v20M32 18v12"/></svg>
+            </div>
+            <div class="learning__node-content">
+              <h4>Python</h4>
+              <p>Learning fundamentals and programming concepts. Getting comfortable with syntax, data structures, and thinking in code.</p>
+              <span class="learning__node-tag learning__node-tag--active">Learning</span>
+            </div>
+          </div>
+
+          <div class="learning__arrow anim-fade-up">
+            <svg viewBox="0 0 24 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 0v32M6 26l6 6 6-6"/></svg>
+          </div>
+
+          <div class="learning__node learning__node--active">
+            <div class="learning__node-ring learning__node-ring--active">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="20"/><path d="M18 28c0-3.3 2.7-6 6-6s6 2.7 6 6M16 16a4 4 0 108 0 4 4 0 00-8 0z"/><path d="M24 10v-2M24 40v-2M10 24H8M40 24h-2"/></svg>
+            </div>
+            <div class="learning__node-content">
+              <h4>AI / GenAI</h4>
+              <p>Exploring artificial intelligence and generative AI. Learning how AI can be integrated into real applications.</p>
+              <span class="learning__node-tag learning__node-tag--active">Learning</span>
+            </div>
+          </div>
+
+          <div class="learning__arrow anim-fade-up">
+            <svg viewBox="0 0 24 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 0v32M6 26l6 6 6-6"/></svg>
+          </div>
+
+          <div class="learning__node learning__node--active">
+            <div class="learning__node-ring learning__node-ring--active">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="20"/><path d="M15 20l7-7 7 7M15 28l7 7 7-7"/></svg>
+            </div>
+            <div class="learning__node-content">
+              <h4>AI-assisted Development</h4>
+              <p>Exploring AI-assisted development and vibe coding. Experimenting with using AI as part of the development workflow.</p>
+              <span class="learning__node-tag learning__node-tag--active">Learning</span>
+            </div>
+          </div>
+
+          <div class="learning__arrow learning__arrow--faded anim-fade-up">
+            <svg viewBox="0 0 24 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 0v32M6 26l6 6 6-6"/></svg>
+          </div>
+
+          <div class="learning__node learning__node--future">
+            <div class="learning__node-ring learning__node-ring--future">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="20" stroke-dasharray="4 4"/><path d="M24 16v16M16 24h16"/></svg>
+            </div>
+            <div class="learning__node-content">
+              <h4>Advanced Development</h4>
+              <p>Where this road leads next. Still figuring out exactly what that looks like — and that's okay.</p>
+              <span class="learning__node-tag learning__node-tag--future">Upcoming</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detail Cards -->
+        <div class="learning__cards">
+          <div class="learning__card anim-fade-up">
+            <div class="learning__card-header">
+              <div class="learning__card-icon learning__card-icon--python">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.89.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>
+              </div>
+              <div>
+                <h4>Python</h4>
+                <span class="learning__card-status">Fundamentals & core concepts</span>
+              </div>
+            </div>
+            <p>Currently learning Python fundamentals and programming concepts. Building a foundation before jumping into projects.</p>
+          </div>
+
+          <div class="learning__card anim-fade-up anim-delay-1">
+            <div class="learning__card-header">
+              <div class="learning__card-icon learning__card-icon--ai">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 014 4v1a4 4 0 01-8 0V6a4 4 0 014-4z"/><path d="M16 11a6 6 0 01-12 0"/><path d="M12 17v5M8 22h8"/><path d="M18 8l2 2M4 8l2 2"/><circle cx="12" cy="6" r="1"/></svg>
+              </div>
+              <div>
+                <h4>AI / GenAI</h4>
+                <span class="learning__card-status">Exploring & experimenting</span>
+              </div>
+            </div>
+            <p>Exploring artificial intelligence and generative AI. Learning how AI can be integrated into real applications.</p>
+          </div>
+
+          <div class="learning__card anim-fade-up anim-delay-2">
+            <div class="learning__card-header">
+              <div class="learning__card-icon learning__card-icon--aidev">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
+              </div>
+              <div>
+                <h4>AI-assisted Development</h4>
+                <span class="learning__card-status">Experimenting with AI in workflows</span>
+              </div>
+            </div>
+            <p>Exploring AI-assisted development and vibe coding. Experimenting with using AI as part of the development workflow.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="projects__container">
+
+        <div class="projects__header">
+          <span class="projects__label anim-fade-up">// projects</span>
+          <h2 class="projects__title anim-fade-up anim-delay-1">
+            Things I've<br>
+            <span class="text-gradient">built.</span>
+          </h2>
+          <p class="projects__subtitle anim-fade-up anim-delay-2">
+            Real projects, real problems, real learning. Each one taught me something I couldn't have learned from a tutorial.
+          </p>
+        </div>
+
+        <!-- ── Flagship: DuePilot AI ──────────── -->
+        <div class="project-card project-card--flagship anim-fade-up">
+          <div class="project-card__preview">
+            <div class="project-card__mockup">
+              <div class="project-card__mockup-bar">
+                <span class="project-card__mockup-dot"></span>
+                <span class="project-card__mockup-dot"></span>
+                <span class="project-card__mockup-dot"></span>
+                <span class="project-card__mockup-url">duepilot-ai.vercel.app</span>
+              </div>
+              <div class="project-card__mockup-body">
+                <div class="project-card__mockup-sidebar">
+                  <div class="project-card__mockup-line" style="width:70%"></div>
+                  <div class="project-card__mockup-line" style="width:55%"></div>
+                  <div class="project-card__mockup-line" style="width:85%"></div>
+                  <div class="project-card__mockup-line" style="width:40%"></div>
+                </div>
+                <div class="project-card__mockup-main">
+                  <div class="project-card__mockup-block" style="width:100%;height:28px"></div>
+                  <div class="project-card__mockup-block" style="width:80%;height:18px"></div>
+                  <div class="project-card__mockup-row">
+                    <div class="project-card__mockup-block" style="width:45%;height:60px"></div>
+                    <div class="project-card__mockup-block" style="width:45%;height:60px"></div>
+                  </div>
+                  <div class="project-card__mockup-block" style="width:60%;height:14px"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__flagship-badge">Featured Project</div>
+          </div>
+
+          <div class="project-card__info">
+            <div class="project-card__meta">
+              <span class="project-card__category">AI Productivity</span>
+              <span class="project-card__year">2026</span>
+            </div>
+            <h3 class="project-card__name">DuePilot AI</h3>
+            <p class="project-card__desc">
+              An AI-powered productivity platform designed to help manage tasks and workflows
+              more intelligently. Built to explore how AI can make everyday productivity tools
+              actually smarter.
+            </p>
+            <div class="project-card__tags">
+              <span>AI</span>
+              <span>Productivity</span>
+              <span>Full-Stack</span>
+            </div>
+            <div class="project-card__links">
+              <a href="case-study.html" class="btn btn--primary btn--sm">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                <span class="btn__text">View Case Study</span>
+              </a>
+              <a href="#" class="btn btn--secondary btn--sm">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                <span class="btn__text">Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── ASSETrix ───────────────────────── -->
+        <div class="project-card project-card--side anim-fade-up">
+          <div class="project-card__preview project-card__preview--dark">
+            <div class="project-card__mockup">
+              <div class="project-card__mockup-bar">
+                <span class="project-card__mockup-dot"></span>
+                <span class="project-card__mockup-dot"></span>
+                <span class="project-card__mockup-dot"></span>
+                <span class="project-card__mockup-url">assetrix</span>
+              </div>
+              <div class="project-card__mockup-body">
+                <div class="project-card__mockup-main">
+                  <div class="project-card__mockup-block" style="width:100%;height:22px"></div>
+                  <div class="project-card__mockup-row">
+                    <div class="project-card__mockup-block" style="width:48%;height:50px"></div>
+                    <div class="project-card__mockup-block" style="width:48%;height:50px"></div>
+                    <div class="project-card__mockup-block" style="width:48%;height:50px"></div>
+                  </div>
+                  <div class="project-card__mockup-block" style="width:70%;height:14px"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__hackathon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 15l-2 5l9-9l-5 2l2-5l-9 9l5-2z"/></svg>
+              Odoo Hackathon 2026 &bull; Finalist
+            </div>
+          </div>
+
+          <div class="project-card__info">
+            <div class="project-card__meta">
+              <span class="project-card__category">Hackathon</span>
+              <span class="project-card__year">2026</span>
+            </div>
+            <h3 class="project-card__name">ASSETrix</h3>
+            <p class="project-card__desc">
+              A team project built during the Odoo Hackathon 2026. We made it to the finals —
+              a great experience in collaborating under pressure and shipping something real in a limited time.
+            </p>
+            <div class="project-card__tags">
+              <span>Team Project</span>
+              <span>Hackathon</span>
+              <span>Odoo</span>
+            </div>
+            <div class="project-card__links">
+              <a href="assetrix.html" class="btn btn--secondary btn--sm">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                <span class="btn__text">View Project</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── GLOBETROTTER ───────────────────── -->
+        <div class="project-card project-card--side project-card--right anim-fade-up">
+          <div class="project-card__preview project-card__preview--accent">
+            <div class="project-card__mockup">
+              <div class="project-card__mockup-bar">
+                <span class="project-card__mockup-dot"></span>
+                <span class="project-card__mockup-dot"></span>
+                <span class="project-card__mockup-dot"></span>
+                <span class="project-card__mockup-url">globetrotter</span>
+              </div>
+              <div class="project-card__mockup-body">
+                <div class="project-card__mockup-main">
+                  <div class="project-card__mockup-block" style="width:100%;height:20px"></div>
+                  <div class="project-card__mockup-row">
+                    <div class="project-card__mockup-block" style="width:30%;height:70px"></div>
+                    <div class="project-card__mockup-block" style="width:65%;height:70px"></div>
+                  </div>
+                  <div class="project-card__mockup-block" style="width:55%;height:14px"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__hackathon-badge project-card__hackathon-badge--accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              Team Hackathon Project
+            </div>
+          </div>
+
+          <div class="project-card__info">
+            <div class="project-card__meta">
+              <span class="project-card__category">Travel / Web App</span>
+              <span class="project-card__year">Hackathon</span>
+            </div>
+            <h3 class="project-card__name">GLOBETROTTER</h3>
+            <p class="project-card__desc">
+              A multi-city travel planning platform built as a team during a hackathon.
+              I contributed by creating 2 pages of the application as part of the frontend development.
+            </p>
+            <div class="project-card__tags">
+              <span>Team Project</span>
+              <span>Travel</span>
+              <span>Frontend</span>
+            </div>
+            <div class="project-card__links">
+              <a href="globetrotter.html" class="btn btn--secondary btn--sm">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                <span class="btn__text">View Project</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="achievements" id="achievements">
+      <div class="achievements__container">
+
+        <div class="achievements__header">
+          <span class="achievements__label anim-fade-up">// achievements</span>
+          <h2 class="achievements__title anim-fade-up anim-delay-1">
+            Growth &<br>
+            <span class="text-gradient">participation.</span>
+          </h2>
+        </div>
+
+        <div class="achievements__timeline">
+
+          <div class="achievements__item anim-fade-up">
+            <div class="achievements__marker"></div>
+            <div class="achievements__content">
+              <div class="achievements__meta">
+                <span class="achievements__badge achievements__badge--gold">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M12 15l-2 5l9-9l-5 2l2-5l-9 9l5-2z"/></svg>
+                  Finalist
+                </span>
+                <span class="achievements__date">2026</span>
+              </div>
+              <h3 class="achievements__name">Odoo Hackathon 2026</h3>
+              <p class="achievements__desc">Reached the finals with team project <strong>ASSETrix</strong>. A rewarding experience in building under pressure.</p>
+            </div>
+          </div>
+
+          <div class="achievements__item anim-fade-up anim-delay-1">
+            <div class="achievements__marker"></div>
+            <div class="achievements__content">
+              <div class="achievements__meta">
+                <span class="achievements__badge achievements__badge--blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                  Participation
+                </span>
+                <span class="achievements__date">2025–2026</span>
+              </div>
+              <h3 class="achievements__name">Hackathon Participation</h3>
+              <p class="achievements__desc">Active participation in multiple hackathons. Relevant participation certificates earned.</p>
+            </div>
+          </div>
+
+          <div class="achievements__item anim-fade-up anim-delay-2">
+            <div class="achievements__marker"></div>
+            <div class="achievements__content">
+              <div class="achievements__meta">
+                <span class="achievements__badge achievements__badge--teal">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  Coordination
+                </span>
+                <span class="achievements__date">2025</span>
+              </div>
+              <h3 class="achievements__name">AI Event Coordination</h3>
+              <p class="achievements__desc">Coordinated a 3-day AI event. Managed logistics and helped bring the event together.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <div class="education__container">
+
+        <div class="education__header">
+          <span class="education__label anim-fade-up">// education</span>
+          <h2 class="education__title anim-fade-up anim-delay-1">
+            Where I'm<br>
+            <span class="text-gradient">studying.</span>
+          </h2>
+        </div>
+
+        <div class="education__card anim-fade-up anim-delay-2">
+          <div class="education__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/><path d="M12 14v7m0 0l-3-3m3 3l3-3"/></svg>
+          </div>
+          <div class="education__card-body">
+            <div class="education__card-top">
+              <h3 class="education__degree">B.Sc. BCA</h3>
+              <span class="education__badge">3rd Year</span>
+            </div>
+            <p class="education__institution">LJCCA</p>
+            <div class="education__card-meta">
+              <span class="education__meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                Expected Graduation: 2027
+              </span>
+              <span class="education__meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                Bachelor of Computer Applications
+              </span>
+            </div>
+          </div>
+          <div class="education__card-glow"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="certifications" id="certifications">
+      <div class="certifications__container">
+
+        <div class="certifications__header">
+          <span class="certifications__label anim-fade-up">// certifications</span>
+          <h2 class="certifications__title anim-fade-up anim-delay-1">
+            Certificates &<br>
+            <span class="text-gradient">credentials.</span>
+          </h2>
+        </div>
+
+        <div class="certifications__grid">
+
+          <div class="cert-card anim-fade-up">
+            <div class="cert-card__preview">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" width="32" height="32"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+              <span class="cert-card__placeholder-text">Certificate</span>
+            </div>
+            <div class="cert-card__info">
+              <span class="cert-card__category cert-card__category--hackathon">Hackathon</span>
+              <h4 class="cert-card__title">Certificate Title</h4>
+              <p class="cert-card__org">Issuing Organization</p>
+              <span class="cert-card__date">Year</span>
+            </div>
+            <button class="cert-card__btn" disabled>View Certificate</button>
+          </div>
+
+          <div class="cert-card anim-fade-up anim-delay-1">
+            <div class="cert-card__preview">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" width="32" height="32"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              <span class="cert-card__placeholder-text">Certificate</span>
+            </div>
+            <div class="cert-card__info">
+              <span class="cert-card__category cert-card__category--learning">Learning</span>
+              <h4 class="cert-card__title">Certificate Title</h4>
+              <p class="cert-card__org">Issuing Organization</p>
+              <span class="cert-card__date">Year</span>
+            </div>
+            <button class="cert-card__btn" disabled>View Certificate</button>
+          </div>
+
+          <div class="cert-card anim-fade-up anim-delay-2">
+            <div class="cert-card__preview">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" width="32" height="32"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              <span class="cert-card__placeholder-text">Certificate</span>
+            </div>
+            <div class="cert-card__info">
+              <span class="cert-card__category cert-card__category--event">Event</span>
+              <h4 class="cert-card__title">Certificate Title</h4>
+              <p class="cert-card__org">Issuing Organization</p>
+              <span class="cert-card__date">Year</span>
+            </div>
+            <button class="cert-card__btn" disabled>View Certificate</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__container">
+
+        <div class="contact__header">
+          <span class="contact__label anim-fade-up">// contact</span>
+          <h2 class="contact__title anim-fade-up anim-delay-1">
+            Let's<br>
+            <span class="text-gradient">Connect.</span>
+          </h2>
+          <p class="contact__intro anim-fade-up anim-delay-2">
+            Whether it's a conversation, an opportunity, a collaboration, or just a project idea —
+            I'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="contact__methods">
+
+          <a href="mailto:riddhiescit43@gmail.com" class="contact-card anim-fade-up">
+            <div class="contact-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div class="contact-card__text">
+              <span class="contact-card__label">Email</span>
+              <span class="contact-card__value">riddhiescit43@gmail.com</span>
+            </div>
+            <svg class="contact-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="https://github.com/Riddhishah43" class="contact-card anim-fade-up anim-delay-1" target="_blank" rel="noopener">
+            <div class="contact-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </div>
+            <div class="contact-card__text">
+              <span class="contact-card__label">GitHub</span>
+              <span class="contact-card__value">github.com/Riddhishah43</span>
+            </div>
+            <svg class="contact-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/riddhi-shah-8667013b5/" class="contact-card anim-fade-up anim-delay-2" target="_blank" rel="noopener">
+            <div class="contact-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="contact-card__text">
+              <span class="contact-card__label">LinkedIn</span>
+              <span class="contact-card__value">linkedin.com/in/riddhi-shah</span>
+            </div>
+            <svg class="contact-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+
+        </div>
+
+        <p class="contact__footer anim-fade-up anim-delay-3">
+          Built with curiosity and a lot of debugging.
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__name">RIDDHI SHAH</span>
+          <span class="footer__tagline">Learning. Building. Experimenting.</span>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Quick Links</h4>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer__col">
+            <h4>Connect</h4>
+            <a href="https://github.com/Riddhishah43" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/riddhi-shah-8667013b5/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:riddhiescit43@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Riddhi Shah</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

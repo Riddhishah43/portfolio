@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuePilot AI — Case Study | Riddhi Shah</title>
+  <link rel="stylesheet" href="case-study.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        <span>Back to Portfolio</span>
+      </a>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="cs-hero">
+      <div class="cs-hero__bg" aria-hidden="true"></div>
+      <div class="cs-hero__content">
+        <span class="cs-hero__label anim-fade-up">Case Study</span>
+        <h1 class="cs-hero__title anim-fade-up anim-delay-1">
+          DuePilot<br>
+          <span class="text-gradient">AI</span>
+        </h1>
+        <p class="cs-hero__tagline anim-fade-up anim-delay-2">Navigate Every Deadline</p>
+        <p class="cs-hero__intro anim-fade-up anim-delay-3">
+          An AI-powered productivity platform that doesn't just remind you about deadlines —
+          it helps you actually finish the work. Built as a personal project to explore how AI
+          can make everyday productivity tools genuinely smarter.
+        </p>
+        <div class="cs-hero__ctas anim-fade-up anim-delay-4">
+          <a href="#" class="btn btn--primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <span class="btn__text">Live Demo</span>
+          </a>
+          <a href="https://github.com/Riddhishah43/duepilot" class="btn btn--secondary" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            <span class="btn__text">GitHub</span>
+          </a>
+        </div>
+        <div class="cs-hero__meta anim-fade-up anim-delay-5">
+          <span>AI Productivity</span>
+          <span class="cs-hero__meta-sep">&bull;</span>
+          <span>2026</span>
+          <span class="cs-hero__meta-sep">&bull;</span>
+          <span>Personal Project</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1 — The Problem -->
+    <section class="cs-section">
+      <div class="cs-section__container">
+        <div class="cs-section__header anim-fade-up">
+          <span class="cs-section__number">01</span>
+          <h2 class="cs-section__title">The Problem</h2>
+        </div>
+        <div class="cs-section__body">
+          <p class="cs-text cs-text--large anim-fade-up">
+            As a BCA student, my life is a constant juggle of assignments, projects, exams,
+            and personal goals. There's always more to do than hours in the day.
+          </p>
+          <div class="cs-problem-grid anim-fade-up anim-delay-1">
+            <div class="cs-problem-card">
+              <div class="cs-problem-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/><path d="M9 14l2 2 4-4"/></svg>
+              </div>
+              <h4>Assignments</h4>
+              <p>Stacking up with overlapping deadlines</p>
+            </div>
+            <div class="cs-problem-card">
+              <div class="cs-problem-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              </div>
+              <h4>Projects</h4>
+              <p>Multiple coding projects running simultaneously</p>
+            </div>
+            <div class="cs-problem-card">
+              <div class="cs-problem-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              </div>
+              <h4>Exams</h4>
+              <p>Preparing while managing everything else</p>
+            </div>
+            <div class="cs-problem-card">
+              <div class="cs-problem-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <h4>Personal Goals</h4>
+              <p>Side projects and learning goals getting pushed aside</p>
+            </div>
+          </div>
+          <p class="cs-text anim-fade-up anim-delay-2">
+            Existing productivity apps remind you about deadlines. They send notifications,
+            show countdowns, and track dates. But they don't help you actually
+            <strong>complete the work</strong>. That's the gap I wanted to solve.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 — Why I Built It -->
+    <section class="cs-section cs-section--alt">
+      <div class="cs-section__container">
+        <div class="cs-section__header anim-fade-up">
+          <span class="cs-section__number">02</span>
+          <h2 class="cs-section__title">Why I Built It</h2>
+        </div>
+        <div class="cs-section__body">
+          <p class="cs-text cs-text--large anim-fade-up">
+            I wanted to create something that doesn't just organize my tasks —
+            it actively helps me finish them.
+          </p>
+          <p class="cs-text anim-fade-up anim-delay-1">
+            Most to-do apps are passive. You add a task, set a date, and hope you remember
+            to do it. But the real problem isn't remembering — it's figuring out
+            <strong>what to work on right now</strong>, how to break it down, and how to stay
+            focused long enough to actually get it done.
+          </p>
+          <p class="cs-text anim-fade-up anim-delay-2">
+            DuePilot AI was my answer to that. An AI-powered platform that acts less like a
+            calendar and more like a coach — helping you plan, prioritize, and push through
+            your work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 — The Idea -->
+    <section class="cs-section">
+      <div class="cs-section__container">
+        <div class="cs-section__header anim-fade-up">
+          <span class="cs-section__number">03</span>
+          <h2 class="cs-section__title">The Idea</h2>
+        </div>
+        <div class="cs-section__body">
+          <p class="cs-text cs-text--large anim-fade-up">
+            DuePilot AI uses AI to help users plan work, stay focused, decide what to work on
+            next, and manage goals and deadlines — all in one place.
+          </p>
+          <div class="cs-idea-grid anim-fade-up anim-delay-1">
+            <div class="cs-idea-card">
+              <div class="cs-idea-num">01</div>
+              <h4>Plan Work</h4>
+              <p>Break large goals into manageable tasks with AI-generated plans.</p>
+            </div>
+            <div class="cs-idea-card">
+              <div class="cs-idea-num">02</div>
+              <h4>Stay Focused</h4>
+              <p>Use built-in focus tools to minimize distractions during work sessions.</p>
+            </div>
+            <div class="cs-idea-card">
+              <div class="cs-idea-num">03</div>
+              <h4>Decide What's Next</h4>
+              <p>AI analyzes your deadlines and energy to suggest what to work on now.</p>
+            </div>
+            <div class="cs-idea-card">
+              <div class="cs-idea-num">04</div>
+              <h4>Manage Goals</h4>
+              <p>Track long-term goals alongside daily tasks without losing the big picture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 — Key Features -->
+    <section class="cs-section cs-section--alt">
+      <div class="cs-section__container">
+        <div class="cs-section__header anim-fade-up">
+          <span class="cs-section__number">04</span>
+          <h2 class="cs-section__title">Key Features</h2>
+        </div>
+        <div class="cs-section__body">
+          <div class="cs-features-grid">
+            <div class="cs-feature anim-fade-up">
+              <div class="cs-feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
+              </div>
+              <h4>AI Coach</h4>
+              <p>Personalized guidance to help you navigate tasks and stay on track.</p>
+            </div>
+            <div class="cs-feature anim-fade-up anim-delay-1">
+              <div class="cs-feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              </div>
+              <h4>Smart Scheduling</h4>
+              <p>AI arranges your tasks based on deadlines, priority, and your work patterns.</p>
+            </div>
+            <div class="cs-feature anim-fade-up anim-delay-2">
+              <div class="cs-feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 9v2m0 4h.01M5.07 19H18.93a2 2 0 001.737-3.003L13.737 4a2 2 0 00-3.474 0L3.333 15.997A2 2 0 005.07 19z"/></svg>
+              </div>
+              <h4>Rescue Mode</h4>
+              <p>When you're behind, Rescue Mode reorganizes your plan to catch up.</p>
+            </div>
+            <div class="cs-feature anim-fade-up anim-delay-3">
+              <div class="cs-feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <h4>Behavioral Pattern Analysis</h4>
+              <p>Learns when and how you work best to optimize your schedule.</p>
+            </div>
+            <div class="cs-feature anim-fade-up anim-delay-4">
+              <div class="cs-feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+              </div>
+              <h4>Analytics Dashboard</h4>
+              <p>Visualize your progress, completion rates, and productivity trends.</p>
+            </div>
+            <div class="cs-feature anim-fade-up anim-delay-5">
+              <div class="cs-feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+              </div>
+              <h4>Goal & Milestone Management</h4>
+              <p>Set long-term goals and track milestones alongside daily tasks.</p>
+            </div>
+            <div class="cs-feature anim-fade-up anim-delay-6">
+              <div class="cs-feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <h4>Pomodoro Focus Timer</h4>
+              <p>Built-in timer to structure work sessions with breaks.</p>
+            </div>
+            <div class="cs-feature anim-fade-up anim-delay-7">
+              <div class="cs-feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+              </div>
+              <h4>AI Study Planner</h4>
+              <p>Generates study plans based on exam schedules and topic priorities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 — How It Works -->
+    <section class="cs-section">
+      <div class="cs-section__container">
+        <div class="cs-section__header anim-fade-up">
+          <span class="cs-section__number">05</span>
+          <h2 class="cs-section__title">How It Works</h2>
+        </div>
+        <div class="cs-section__body">
+          <div class="cs-flow anim-fade-up">
+            <div class="cs-flow__item">
+              <div class="cs-flow__node cs-flow__node--start">User Input</div>
+              <div class="cs-flow__arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+            <div class="cs-flow__item">
+              <div class="cs-flow__node">Tasks / Goals</div>
+              <div class="cs-flow__arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+            <div class="cs-flow__item">
+              <div class="cs-flow__node cs-flow__node--ai">AI Processing</div>
+              <div class="cs-flow__arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+            <div class="cs-flow__item">
+              <div class="cs-flow__node">Personalized Plan</div>
+              <div class="cs-flow__arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+            <div class="cs-flow__item">
+              <div class="cs-flow__node">User Action</div>
+              <div class="cs-flow__arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+            <div class="cs-flow__item">
+              <div class="cs-flow__node cs-flow__node--end">Progress / Analytics</div>
+            </div>
+          </div>
+          <p class="cs-text anim-fade-up anim-delay-1">
+            The user provides their tasks and goals. AI processes them, considers deadlines
+            and patterns, and generates a personalized plan. The user acts on it, and the
+            system tracks progress to improve future recommendations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6 — Tech Stack -->
+    <section class="cs-section cs-section--alt">
+      <div class="cs-section__container">
+        <div class="cs-section__header anim-fade-up">
+          <span class="cs-section__number">06</span>
+          <h2 class="cs-section__title">Tech Stack</h2>
+        </div>
+        <div class="cs-section__body">
+          <div class="cs-tech-grid anim-fade-up">
+            <div class="cs-tech-card">
+              <span class="cs-tech-name">React 18</span>
+              <span class="cs-tech-role">Frontend</span>
+            </div>
+            <div class="cs-tech-card">
+              <span class="cs-tech-name">Vite</span>
+              <span class="cs-tech-role">Build Tool</span>
+            </div>
+            <div class="cs-tech-card">
+              <span class="cs-tech-name">Tailwind CSS</span>
+              <span class="cs-tech-role">Styling</span>
+            </div>
+            <div class="cs-tech-card">
+              <span class="cs-tech-name">Express.js</span>
+              <span class="cs-tech-role">Backend</span>
+            </div>
+            <div class="cs-tech-card">
+              <span class="cs-tech-name">MongoDB Atlas</span>
+              <span class="cs-tech-role">Database</span>
+            </div>
+            <div class="cs-tech-card">
+              <span class="cs-tech-name">Groq AI</span>
+              <span class="cs-tech-role">AI Inference</span>
+            </div>
+            <div class="cs-tech-card cs-tech-card--highlight">
+              <span class="cs-tech-name">LLaMA 3.3-70B</span>
+              <span class="cs-tech-role">Language Model</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7 — Challenges -->
+    <section class="cs-section">
+      <div class="cs-section__container">
+        <div class="cs-section__header anim-fade-up">
+          <span class="cs-section__number">07</span>
+          <h2 class="cs-section__title">Challenges</h2>
+        </div>
+        <div class="cs-section__body">
+          <p class="cs-text cs-text--large anim-fade-up">
+            Building something real is never smooth. Here's what made it hard — and worth it.
+          </p>
+          <div class="cs-challenges-list anim-fade-up anim-delay-1">
+            <div class="cs-challenge">
+              <div class="cs-challenge-marker"></div>
+              <div>
+                <h4>Rewriting features</h4>
+                <p>Some features didn't work the first time. Or the second. Rewriting was part of the process.</p>
+              </div>
+            </div>
+            <div class="cs-challenge">
+              <div class="cs-challenge-marker"></div>
+              <div>
+                <h4>Hours of debugging</h4>
+                <p>Spending hours追踪 a single bug only to find a missing semicolon or wrong variable name.</p>
+              </div>
+            </div>
+            <div class="cs-challenge">
+              <div class="cs-challenge-marker"></div>
+              <div>
+                <h4>Technical issues</h4>
+                <p>APIs not cooperating, environment configs breaking, dependencies conflicting — the usual.</p>
+              </div>
+            </div>
+            <div class="cs-challenge">
+              <div class="cs-challenge-marker"></div>
+              <div>
+                <h4>Time pressure</h4>
+                <p>Building while managing coursework meant every hour counted.</p>
+              </div>
+            </div>
+            <div class="cs-challenge">
+              <div class="cs-challenge-marker"></div>
+              <div>
+                <h4>Figuring it out independently</h4>
+                <p>No team, no mentor guiding every step — just me, docs, and a lot of Stack Overflow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8 — What I Learned -->
+    <section class="cs-section cs-section--alt">
+      <div class="cs-section__container">
+        <div class="cs-section__header anim-fade-up">
+          <span class="cs-section__number">08</span>
+          <h2 class="cs-section__title">What I Learned</h2>
+        </div>
+        <div class="cs-section__body">
+          <div class="cs-learned-grid">
+            <div class="cs-learned anim-fade-up">
+              <span class="cs-learned-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span>Independent problem solving</span>
+            </div>
+            <div class="cs-learned anim-fade-up anim-delay-1">
+              <span class="cs-learned-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span>Learning unfamiliar technologies quickly</span>
+            </div>
+            <div class="cs-learned anim-fade-up anim-delay-2">
+              <span class="cs-learned-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span>Debugging independently</span>
+            </div>
+            <div class="cs-learned anim-fade-up anim-delay-3">
+              <span class="cs-learned-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span>Consistency matters more than talent</span>
+            </div>
+            <div class="cs-learned anim-fade-up anim-delay-4">
+              <span class="cs-learned-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span>Thinking differently about problems</span>
+            </div>
+            <div class="cs-learned anim-fade-up anim-delay-5">
+              <span class="cs-learned-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span>Confidence to explore AI</span>
+            </div>
+            <div class="cs-learned anim-fade-up anim-delay-6">
+              <span class="cs-learned-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span>Building products around real problems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9 — Product Showcase -->
+    <section class="cs-section">
+      <div class="cs-section__container">
+        <div class="cs-section__header anim-fade-up">
+          <span class="cs-section__number">09</span>
+          <h2 class="cs-section__title">Product Showcase</h2>
+        </div>
+        <div class="cs-section__body">
+          <div class="cs-showcase anim-fade-up">
+            <div class="cs-showcase__frame">
+              <div class="cs-showcase__bar">
+                <span class="cs-showcase__dot"></span>
+                <span class="cs-showcase__dot"></span>
+                <span class="cs-showcase__dot"></span>
+                <span class="cs-showcase__url">duepilot-ai.vercel.app</span>
+              </div>
+              <div class="cs-showcase__screen">
+                <div class="cs-showcase__layout">
+                  <div class="cs-showcase__sidebar">
+                    <div class="cs-showcase__nav-item cs-showcase__nav-item--active">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                      Dashboard
+                    </div>
+                    <div class="cs-showcase__nav-item">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                      Tasks
+                    </div>
+                    <div class="cs-showcase__nav-item">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                      AI Coach
+                    </div>
+                    <div class="cs-showcase__nav-item">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+                      Analytics
+                    </div>
+                  </div>
+                  <div class="cs-showcase__main">
+                    <div class="cs-showcase__header-bar">
+                      <div class="cs-showcase__block" style="width:120px;height:14px"></div>
+                      <div class="cs-showcase__block cs-showcase__block--btn" style="width:80px;height:28px"></div>
+                    </div>
+                    <div class="cs-showcase__cards">
+                      <div class="cs-showcase__stat-card">
+                        <div class="cs-showcase__block" style="width:50px;height:10px;margin-bottom:8px"></div>
+                        <div class="cs-showcase__block" style="width:35px;height:22px"></div>
+                      </div>
+                      <div class="cs-showcase__stat-card">
+                        <div class="cs-showcase__block" style="width:50px;height:10px;margin-bottom:8px"></div>
+                        <div class="cs-showcase__block" style="width:35px;height:22px"></div>
+                      </div>
+                      <div class="cs-showcase__stat-card">
+                        <div class="cs-showcase__block" style="width:50px;height:10px;margin-bottom:8px"></div>
+                        <div class="cs-showcase__block" style="width:35px;height:22px"></div>
+                      </div>
+                    </div>
+                    <div class="cs-showcase__chart-area">
+                      <div class="cs-showcase__chart-bar" style="height:40%"></div>
+                      <div class="cs-showcase__chart-bar" style="height:65%"></div>
+                      <div class="cs-showcase__chart-bar" style="height:45%"></div>
+                      <div class="cs-showcase__chart-bar" style="height:80%"></div>
+                      <div class="cs-showcase__chart-bar" style="height:55%"></div>
+                      <div class="cs-showcase__chart-bar" style="height:90%"></div>
+                      <div class="cs-showcase__chart-bar" style="height:70%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 10 — Links -->
+    <section class="cs-section cs-section--alt cs-section--last">
+      <div class="cs-section__container cs-section__container--center">
+        <div class="cs-section__header anim-fade-up">
+          <span class="cs-section__number">10</span>
+          <h2 class="cs-section__title">Links</h2>
+        </div>
+        <div class="cs-links anim-fade-up anim-delay-1">
+          <a href="#" class="btn btn--primary btn--lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <span class="btn__text">Live Demo</span>
+          </a>
+          <a href="https://github.com/Riddhishah43/duepilot" class="btn btn--secondary btn--lg" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            <span class="btn__text">GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="case-study.js"></script>
+</body>
+</html>
