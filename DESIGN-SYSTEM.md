@@ -303,15 +303,16 @@ Pattern repeated across all sections:
 
 ```
 prtf_1/
-├── index.html              # Main portfolio page
+├── index.html              # Main portfolio page (3 project cards)
+├── README.md               # Folder map: cards -> detail pages
 ├── styles.css              # Main stylesheet
 ├── script.js               # Main JavaScript
-├── case-study.html         # DuePilot AI case study
-├── case-study.css          # Case study styles
-├── case-study.js           # Case study JavaScript
-├── assetrix.html           # Assetrix project page
-├── globetrotter.html       # GlobeTrotter project page
-├── project-page.css        # Shared project page styles
+├── project-duepilot.html   # Card #1 detail: DuePilot AI case study (personal/flagship)
+├── project-duepilot.css    # DuePilot styles (renamed from case-study.css)
+├── project-duepilot.js     # DuePilot JavaScript (renamed from case-study.js)
+├── project-assetrix.html   # Card #2 detail: ASSETrix showcase (team/Odoo finalist)
+├── project-globetrotter.html # Card #3 detail: GlobeTrotter showcase (team/frontend)
+├── project-page.css        # Shared project page styles (cards #2 + #3)
 ```
 
 ---
